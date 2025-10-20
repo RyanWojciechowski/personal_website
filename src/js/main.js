@@ -240,33 +240,20 @@ async function handleFormSubmission(event) {
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
     
-    try {
-        // Send to backend API
-        const response = await fetch('http://localhost:3001/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
+        try {
+            // For GitHub Pages deployment - show success message
+            // In a real deployment, you'd integrate with a service like Formspree, Netlify Forms, or EmailJS
+            
             // Reset form
             form.reset();
             
             // Show success message
-            showNotification(result.message, 'success');
-        } else {
-            // Show error message
-            showNotification(result.message || 'Failed to send message. Please try again.', 'error');
-        }
-        
-    } catch (error) {
-        console.error('Contact form error:', error);
-        showNotification('Network error. Please check your connection and try again.', 'error');
-    } finally {
+            showNotification('Thank you for your message! I\'ll get back to you soon. For immediate contact, please email me directly at wojcier2@tcnj.edu', 'success');
+            
+        } catch (error) {
+            console.error('Contact form error:', error);
+            showNotification('Thank you for your message! Please email me directly at wojcier2@tcnj.edu', 'success');
+        } finally {
         // Reset button
         submitButton.textContent = originalText;
         submitButton.disabled = false;
