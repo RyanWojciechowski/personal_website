@@ -1,0 +1,132 @@
+<!-- Flip Card Template for Projects -->
+<!-- Copy this template to create new flip cards for your projects -->
+
+<div class="project-card-container" data-aos="fade-up" data-aos-delay="100">
+    <div class="project-card glass rounded-xl relative w-full h-96 cursor-pointer" onclick="flipCard(this)">
+        <!-- Front of card -->
+        <div class="project-card-front absolute inset-0 p-6 flex flex-col">
+            <div class="w-full h-48 bg-gradient-to-br from-cyber-green to-cyber-green-dark rounded-lg mb-4 flex items-center justify-center">
+                <span class="text-cyber-black font-bold text-lg">Project Image</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">YOUR PROJECT TITLE</h3>
+            <p class="text-gray-300 mb-4">Brief description of your project and what it does.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-cyber-green text-cyber-black rounded-full text-sm font-medium">Technology1</span>
+                <span class="px-3 py-1 bg-cyber-green text-cyber-black rounded-full text-sm font-medium">Technology2</span>
+                <span class="px-3 py-1 bg-cyber-green text-cyber-black rounded-full text-sm font-medium">Technology3</span>
+            </div>
+            <div class="flex gap-2 mt-auto">
+                <button class="text-cyber-green hover:text-cyber-green-dark transition-colors">View Details →</button>
+                <button class="text-cyber-green hover:text-cyber-green-dark transition-colors ml-auto" onclick="event.stopPropagation(); window.open('YOUR_GITHUB_URL', '_blank')">GitHub →</button>
+            </div>
+        </div>
+        
+        <!-- Back of card -->
+        <div class="project-card-back absolute inset-0 p-6 flex flex-col bg-gradient-to-br from-cyber-dark to-cyber-black rounded-xl">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-semibold text-cyber-gradient">YOUR PROJECT TITLE</h3>
+                <span class="px-2 py-1 bg-cyber-green text-cyber-black rounded text-xs font-medium">PROJECT TYPE</span>
+            </div>
+            
+            <div class="flex-1 overflow-y-auto">
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2 text-cyber-green text-sm">📱 Project Overview</h4>
+                    <p class="text-gray-300 text-xs leading-relaxed">Detailed description of your project, what problem it solves, and why you built it. Explain the purpose and impact of your work.</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2 text-cyber-green text-sm">⚡ Key Features</h4>
+                    <ul class="text-gray-300 text-xs space-y-1">
+                        <li>• <strong>Feature 1:</strong> Description of what it does and why it's important</li>
+                        <li>• <strong>Feature 2:</strong> Description of what it does and why it's important</li>
+                        <li>• <strong>Feature 3:</strong> Description of what it does and why it's important</li>
+                        <li>• <strong>Feature 4:</strong> Description of what it does and why it's important</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2 text-cyber-green text-sm">🛠️ Technical Stack</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="text-center">
+                            <div class="w-8 h-8 bg-cyber-green rounded-full mx-auto mb-1 flex items-center justify-center">
+                                <span class="text-cyber-black font-bold text-xs">T1</span>
+                            </div>
+                            <span class="text-gray-300 text-xs">Technology1</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-8 h-8 bg-cyber-green rounded-full mx-auto mb-1 flex items-center justify-center">
+                                <span class="text-cyber-black font-bold text-xs">T2</span>
+                            </div>
+                            <span class="text-gray-300 text-xs">Technology2</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-8 h-8 bg-cyber-green rounded-full mx-auto mb-1 flex items-center justify-center">
+                                <span class="text-cyber-black font-bold text-xs">T3</span>
+                            </div>
+                            <span class="text-gray-300 text-xs">Technology3</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-8 h-8 bg-cyber-green rounded-full mx-auto mb-1 flex items-center justify-center">
+                                <span class="text-cyber-black font-bold text-xs">T4</span>
+                            </div>
+                            <span class="text-gray-300 text-xs">Technology4</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2 text-cyber-green text-sm">🎯 My Role</h4>
+                    <p class="text-gray-300 text-xs">Describe your specific contributions, responsibilities, and the skills you demonstrated in this project.</p>
+                </div>
+                
+                <!-- Optional: Add challenges or lessons learned -->
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2 text-cyber-green text-sm">🔒 Security/Technical Highlights</h4>
+                    <p class="text-gray-300 text-xs">Highlight any security considerations, technical challenges overcome, or innovative solutions implemented.</p>
+                </div>
+            </div>
+            
+            <div class="flex gap-2 mt-4 pt-4 border-t border-gray-700">
+                <button class="flex-1 px-3 py-2 bg-cyber-green text-cyber-black rounded text-xs font-medium hover:bg-cyber-green-dark transition-colors" onclick="event.stopPropagation(); flipCard(this.closest('.project-card'))">
+                    ← Back
+                </button>
+                <button class="flex-1 px-3 py-2 border border-cyber-green text-cyber-green rounded text-xs font-medium hover:bg-cyber-green hover:text-cyber-black transition-colors" onclick="event.stopPropagation(); window.open('YOUR_GITHUB_URL', '_blank')">
+                    View Code →
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+INSTRUCTIONS FOR USING THIS TEMPLATE:
+
+1. Copy this entire template
+2. Replace the following placeholders:
+   - YOUR PROJECT TITLE: Replace with your actual project name
+   - Brief description...: Replace with a short project description
+   - Technology1, Technology2, etc.: Replace with actual technologies used
+   - YOUR_GITHUB_URL: Replace with your actual GitHub repository URL
+   - Detailed description...: Replace with a comprehensive project overview
+   - Feature 1, Feature 2, etc.: Replace with actual project features
+   - Challenges & Solutions: Optional section for interesting challenges
+
+3. Adjust the data-aos-delay value to stagger animations (100, 200, 300, etc.)
+
+4. Paste the modified template into your projects.html file
+
+EXAMPLE REPLACEMENTS:
+- YOUR PROJECT TITLE → "Network Security Scanner"
+- Brief description → "Automated vulnerability scanner for network infrastructure"
+- Technology1 → "Python"
+- Technology2 → "Nmap"
+- Technology3 → "SQLite"
+- YOUR_GITHUB_URL → "https://github.com/yourusername/network-scanner"
+
+TIPS:
+- Keep descriptions concise but informative
+- Use bullet points for features to make them scannable
+- Include technologies that showcase your skills
+- Add challenges/solutions to show problem-solving ability
+- Make sure GitHub URLs are correct and public
+-->

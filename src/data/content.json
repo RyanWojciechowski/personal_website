@@ -1,0 +1,253 @@
+{
+  "personal": {
+    "name": "Ryan Wojciechowski",
+    "title": "Cybersecurity Professional & Computer Science Student",
+    "tagline": "Bridging the gap between technical cybersecurity concepts and non-technical audiences through AI innovation",
+    "email": "wojcier2@tcnj.edu",
+    "phone": "908.380.5264",
+    "location": "Ewing, New Jersey",
+    "linkedin": "https://www.linkedin.com/in/ryan-wojciechowski-494b452b3/",
+    "github": "https://github.com/RyanWojciechowski",
+    "twitter": ""
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Lifting Lads - Social Fitness App",
+      "description": "HackTCNJ 2025 Winner (Best Use of MongoDB) - Led a cross-functional team to develop a social fitness app during a 24-hour hackathon.",
+      "image": "/assets/images/project1.jpg",
+      "technologies": ["React Native", "Expo Go", "Node.js", "JavaScript", "MongoDB", "Auth0", "Cloudflare Ollama API", "OpenStreetMap API"],
+      "github": "https://github.com/RyanWojciechowski/lifting-lads",
+      "demo": "https://your-demo-link.com",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "AI-Powered Vulnerability Prediction Model",
+      "description": "Developing an AI model to predict common vulnerabilities and generate clear, actionable solutions based on mapped vulnerability data.",
+      "image": "/assets/images/project2.jpg",
+      "technologies": ["Python", "AI/ML", "Gemma", "GPT", "Mistral", "DeepSeek R1", "Llama3.3", "Cybersecurity"],
+      "github": "https://github.com/RyanWojciechowski/vulnerability-prediction",
+      "demo": "https://your-demo-link.com",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "KaliLinux Virtual Box Setup",
+      "description": "Gained hands-on experience with virtualization and Linux, preparing the system for future cybersecurity learning and testing.",
+      "image": "/assets/images/project3.jpg",
+      "technologies": ["Kali Linux", "Virtualization", "Linux", "Cybersecurity Tools"],
+      "github": "https://github.com/RyanWojciechowski/kali-setup",
+      "demo": "https://your-demo-link.com",
+      "featured": true
+    }
+  ],
+  "skills": {
+    "programming": [
+      "Java",
+      "Python",
+      "C",
+      "C++",
+      "TypeScript",
+      "Rust",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "tools": [
+      "MySQL",
+      "MongoDB",
+      "React Native",
+      "Expo Go",
+      "PyTest",
+      "Wireshark",
+      "Kali Linux",
+      "Node.js",
+      "Auth0",
+      "Jupyter Notebook"
+    ],
+    "frameworks": [
+      "Tailwind CSS",
+      "React Native",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "MySQL"
+    ],
+    "languages": [
+      "Spanish (Limited Working Proficiency)",
+      "Japanese (Limited Working Proficiency)"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Lead Cyber Security Researcher",
+      "company": "The College of New Jersey",
+      "location": "Ewing, New Jersey",
+      "startDate": "January 2025",
+      "endDate": "Present",
+      "description": "Working with Dr. Datta to bridge the gap between technical cybersecurity concepts and non-technical audiences through AI innovation.",
+      "achievements": [
+        "Developing an AI model to predict common vulnerabilities and generate clear, actionable solutions",
+        "Leveraging advanced AI models including Gemma, GPT, Mistral, DeepSeek R1 and Llama3.3",
+        "Simplifying technical vulnerability/weakness reports for broader accessibility"
+      ]
+    },
+    {
+      "title": "Intelligence Investigative Intern",
+      "company": "DigiStream Investigations",
+      "location": "Haddonfield, New Jersey",
+      "startDate": "May 2025",
+      "endDate": "August 2025",
+      "description": "Conducted comprehensive background investigations and surveillance operations for client cases.",
+      "achievements": [
+        "Conducted online preliminary background investigations using company applications and licensed government databases",
+        "Scrubbed through surveillance footage up to 96 hours and created multiple 2-minute NDVs for clients",
+        "Worked alongside surveillance investigators in tailing subjects for up to 8-9 hours daily"
+      ]
+    },
+    {
+      "title": "Teaching Assistant",
+      "company": "The College of New Jersey",
+      "location": "Ewing, New Jersey",
+      "startDate": "August 2025",
+      "endDate": "Present",
+      "description": "Guide students through fundamental Java concepts and problem-solving exercises.",
+      "achievements": [
+        "Guide 20+ students weekly through fundamental Java concepts, debugging, and problem-solving exercises",
+        "Facilitate collaborative lab sessions and one-on-one support",
+        "Contribute to measurable increases in student assignment completion and exam readiness"
+      ]
+    },
+    {
+      "title": "Tutor",
+      "company": "The College of New Jersey",
+      "location": "Ewing, New Jersey",
+      "startDate": "August 2025",
+      "endDate": "Present",
+      "description": "Provide targeted tutoring across multiple disciplines to enhance student academic performance.",
+      "achievements": [
+        "Provide targeted tutoring in computer science, calculus, physics, and social sciences to 15+ students weekly",
+        "Connect students with campus academic resources and study strategies",
+        "Result in improved retention and GPA outcomes across disciplines"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "ISC2 Certified in Cybersecurity",
+      "issuer": "ISC2",
+      "date": "2025",
+      "credentialId": "ISC2 Candidate",
+      "expiryDate": "2028",
+      "description": "Foundational cybersecurity certification covering security principles, risk management, and incident response.",
+      "icon": "🛡️"
+    },
+    {
+      "name": "Cisco Network Security",
+      "issuer": "Cisco",
+      "date": "2025",
+      "credentialId": "In Progress",
+      "expiryDate": "TBD",
+      "description": "Network security certification covering Cisco security technologies and best practices.",
+      "icon": "🌐"
+    }
+  ],
+  "coursework": [
+    {
+      "title": "Data Structures",
+      "institution": "The College of New Jersey",
+      "year": "2024",
+      "grade": "A",
+      "description": "Advanced concepts in data structures and algorithms using Java.",
+      "credits": 3
+    },
+    {
+      "title": "Networking",
+      "institution": "The College of New Jersey",
+      "year": "2024",
+      "grade": "A",
+      "description": "Computer networking fundamentals and protocols.",
+      "credits": 3
+    },
+    {
+      "title": "Computer Architecture",
+      "institution": "The College of New Jersey",
+      "year": "2024",
+      "grade": "A",
+      "description": "Computer system architecture and organization.",
+      "credits": 3
+    },
+    {
+      "title": "Discrete Math",
+      "institution": "The College of New Jersey",
+      "year": "2024",
+      "grade": "A",
+      "description": "Mathematical foundations for computer science.",
+      "credits": 3
+    },
+    {
+      "title": "Linear Algebra",
+      "institution": "The College of New Jersey",
+      "year": "2024",
+      "grade": "A",
+      "description": "Linear algebra concepts and applications.",
+      "credits": 3
+    }
+  ],
+  "involvement": [
+    "Criminology Student Association",
+    "TCNJam Committee",
+    "Sigma Alpha Epsilon",
+    "Chess Club",
+    "Mock Trial",
+    "Association for Computing Machinery (ACM)",
+    "Colleges Against Cancer",
+    "Alpha Phi Sigma (National Criminology Association)",
+    "Japanese Student Association"
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Computer Science, Specialization in Cybersecurity & Bachelor of Arts in Criminology",
+    "institution": "The College of New Jersey (TCNJ)",
+    "graduationYear": "May 2027",
+    "gpa": "3.389/4.0",
+    "achievements": [
+      "Dean's List: Fall 2024, Spring 2025"
+    ],
+    "relevantCoursework": [
+      "CSC230 Data Structures",
+      "CSC360 Networking",
+      "CSC325 Computer Architecture",
+      "CSC270 Discrete Math",
+      "MAT215 Linear Algebra"
+    ]
+  },
+  "research": [
+    {
+      "title": "University Innovation Fellowship (UIF), Student Fellow",
+      "institution": "The College of New Jersey",
+      "dates": "May 2025 - Present",
+      "description": "Selected as 1 of 4 students for the global UIF program in collaboration with Stanford d.school initiative empowering student innovation in higher education.",
+      "achievements": [
+        "Partnered with TCNJ leadership including deans, faculty, provosts, and the college president to identify and advocate for strategic improvements",
+        "Currently co-developing an interdisciplinary research lab proposal with UIF cohort",
+        "Aiming to establish a collaborative partnership with an agricultural organization for cross-disciplinary research"
+      ]
+    },
+    {
+      "title": "MUSE Researcher, Undergraduate Researcher",
+      "institution": "The College of New Jersey",
+      "dates": "May 2025 - August 2025",
+      "description": "Hand-picked to continue Cyber Security / Artificial Intelligence research with Dr. Datta for an 8-week intensive on campus research experience.",
+      "achievements": [
+        "Working on simplifying technical vulnerability/weakness reports",
+        "Collaborating with Dr. Datta on AI-powered cybersecurity solutions",
+        "Developing accessible cybersecurity education materials"
+      ]
+    }
+  ],
+  "resume": {
+    "downloadUrl": "/assets/documents/resume.pdf",
+    "lastUpdated": "2025-01-15"
+  }
+}
