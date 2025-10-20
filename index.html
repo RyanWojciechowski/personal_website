@@ -172,7 +172,18 @@
         async function loadSection(sectionId, filePath) {
             try {
                 const response = await fetch(filePath);
-                const html = await response.text();
+                let html = await response.text();
+                
+                // Fix image paths for GitHub Pages
+                html = html.replace(/src="([^"]*\.(png|jpg|jpeg|gif|svg))"/g, (match, imagePath) => {
+                    if (imagePath.startsWith('http')) {
+                        return match; // Already absolute URL
+                    }
+                    // Convert relative paths to absolute GitHub Pages URLs
+                    const baseUrl = 'https://ryanwojciechowski.github.io/personal_website/';
+                    return `src="${baseUrl}${imagePath}"`;
+                });
+                
                 document.getElementById(sectionId).innerHTML = html;
             } catch (error) {
                 console.error(`Error loading ${filePath}:`, error);
