@@ -609,6 +609,21 @@ function initializeCourseworkCarousel() {
     initCarousel();
 }
 
+// Download Resume Function
+function downloadResume() {
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = 'resume_oct_PW.pdf';
+    link.download = 'Ryan_Wojciechowski_Resume.pdf';
+    
+    // Append to body, click, and remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Show success notification
+    showNotification('Resume downloaded successfully!', 'success');
+}
 
 // Export functions for use in other modules
 window.PersonalWebsite = {
