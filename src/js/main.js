@@ -241,18 +241,29 @@ async function handleFormSubmission(event) {
     submitButton.disabled = true;
     
         try {
-            // For GitHub Pages deployment - show success message
-            // In a real deployment, you'd integrate with a service like Formspree, Netlify Forms, or EmailJS
+            // Initialize EmailJS
+            emailjs.init('YOUR_PUBLIC_KEY'); // You'll need to replace this with your actual EmailJS public key
+            
+            // Send email using EmailJS
+            const result = await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+                from_name: data.name,
+                from_email: data.email,
+                subject: data.subject,
+                message: data.message,
+                to_email: 'wojcier2@tcnj.edu'
+            });
+            
+            console.log('Email sent successfully:', result);
             
             // Reset form
             form.reset();
             
             // Show success message
-            showNotification('Thank you for your message! I\'ll get back to you soon. For immediate contact, please email me directly at wojcier2@tcnj.edu', 'success');
+            showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
             
         } catch (error) {
             console.error('Contact form error:', error);
-            showNotification('Thank you for your message! Please email me directly at wojcier2@tcnj.edu', 'success');
+            showNotification('Sorry, there was an error sending your message. Please email me directly at wojcier2@tcnj.edu', 'error');
         } finally {
         // Reset button
         submitButton.textContent = originalText;
