@@ -611,18 +611,45 @@ function initializeCourseworkCarousel() {
 
 // Download Resume Function
 function downloadResume() {
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href = 'resume_oct_PW.pdf';
-    link.download = 'Ryan_Wojciechowski_Resume.pdf';
-    
-    // Append to body, click, and remove
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    
-    // Show success notification
-    showNotification('Resume downloaded successfully!', 'success');
+    try {
+        // Create a temporary link element
+        const link = document.createElement('a');
+        
+        // Use the correct path based on environment
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const isLocalhost = window.location.hostname.includes('localhost') || window.location.hostname.includes('127.0.0.1');
+        
+        let resumePath;
+        if (isGitHubPages) {
+            resumePath = 'https://ryanwojciechowski.github.io/personal_website/resume_oct_PW.pdf';
+        } else if (isLocalhost) {
+            // For local development, use the full URL
+            resumePath = `${window.location.origin}/resume_oct_PW.pdf`;
+        } else {
+            resumePath = 'resume_oct_PW.pdf';
+        }
+            
+        link.href = resumePath;
+        link.download = 'Ryan_Wojciechowski_Resume.pdf';
+        link.target = '_blank'; // Open in new tab as fallback
+        
+        // Append to body, click, and remove
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Show success notification
+        showNotification('Resume download started!', 'success');
+        
+    } catch (error) {
+        console.error('Download error:', error);
+        // Fallback: open in new tab
+        const fallbackPath = window.location.hostname.includes('github.io') 
+            ? 'https://ryanwojciechowski.github.io/personal_website/resume_oct_PW.pdf'
+            : `${window.location.origin}/resume_oct_PW.pdf`;
+        window.open(fallbackPath, '_blank');
+        showNotification('Opening resume in new tab...', 'info');
+    }
 }
 
 // Export functions for use in other modules

@@ -1,15 +1,15 @@
 <!-- Home/Hero Section -->
 <section id="home" class="min-h-screen flex items-center justify-center relative">
     <div class="text-center z-10" data-aos="fade-up">
-        <h1 class="text-6xl md:text-8xl font-bold mb-6">
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 text-right max-w-4xl mx-auto">
             <span class="text-cyber-gradient">Cybersecurity</span>
             <br>
             <span class="text-white">Enthusiast</span>
         </h1>
-        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto text-right">
             Bridging the gap between technical cybersecurity concepts and non-technical audiences through AI innovation
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-end max-w-4xl mx-auto">
             <button class="glass px-8 py-4 rounded-lg hover:bg-cyber-green hover:text-cyber-black transition-all duration-300 transform hover:scale-105" onclick="scrollToSection('projects')">
                 View My Work
             </button>
@@ -20,33 +20,28 @@
     </div>
     
     <!-- Resume Preview Section -->
-    <div class="mt-16 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+    <div class="mt-16 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="400">
         <h2 class="text-2xl font-bold text-center mb-8 text-cyber-gradient font-cyber">&lt;/resume_preview&gt;</h2>
-        <div class="glass rounded-xl p-6 text-center">
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold mb-4">Resume Preview</h3>
-                <p class="text-gray-300 mb-6">Take a look at my professional experience and qualifications</p>
-            </div>
-            
+        <div class="glass rounded-xl p-4 text-center">
             <!-- Resume Preview Container -->
-            <div class="relative max-w-2xl mx-auto">
-                <div class="glass rounded-lg p-4 border border-cyber-green/20">
-                    <div class="aspect-[8.5/11] bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="relative max-w-6xl mx-auto">
+                <div class="glass rounded-lg p-2 border border-cyber-green/20">
+                    <div class="aspect-[8.5/11] bg-white rounded-lg shadow-lg overflow-hidden min-h-[600px]">
                         <iframe 
                             src="resume_oct_PW.pdf#toolbar=0&navpanes=0&scrollbar=0" 
                             class="w-full h-full border-0"
-                            title="Resume Preview">
+                            title="Resume Preview"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         </iframe>
+                        <div style="display:none;" class="flex items-center justify-center h-full bg-gray-100 text-gray-600">
+                            <div class="text-center">
+                                <p class="mb-4">Resume preview not available</p>
+                                <button onclick="downloadResume()" class="bg-cyber-green text-cyber-black px-4 py-2 rounded">
+                                    Download Resume
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Download Button Below Preview -->
-                <div class="mt-6">
-                    <button 
-                        class="bg-cyber-green text-cyber-black px-6 py-3 rounded-lg font-semibold hover:bg-cyber-green-dark transition-all duration-300 transform hover:scale-105" 
-                        onclick="downloadResume()">
-                        📄 Download Full Resume
-                    </button>
                 </div>
             </div>
         </div>
